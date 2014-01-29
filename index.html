@@ -1,13 +1,38 @@
 ---
 layout: default
-title: Intro to Testing
+title: Intro to Testing for Ruby and JavaScript
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<p>
+  When I first started programming, I didn't really have a strong understanding of how to test or what my options were. I learned someone else's favorites ways of testing and didn't really pursue other options. Which, if I'm honest, is because I didn't fully understand how important testing was.
+</p>
+
+<p>
+  Now that I've been doing this for a little while, I understand how important testing is. I love writing tests. I love seeing the shiny green success messages fly across my screen. But when I first started to really get into testing, I didn't know where to turn or what to do. There's lots of stuff on the internet folks, and some of it if super crazy. So I created this project!
+</p>
+
+<p>
+  Unit testing tutortials all use a calculator object that shares the same basic functionality, advancing in complexity as you step through the tutorials. I often find that the best way to learn a new way of testing things is to use something simple that mimics a real-world object. I really like using a calculator as an example because it can be as complex or as simple as you want it to be.
+</p>
+
+<h2>Before you begin</h2>
+
+<p>
+  Read through <a href="{{ site.baseurl }}{% post_url 2014-01-29-using-github-branches %}"><i class="fa fa-arrow-circle-right"></i> Using Github repositories alongside tutorials</a> to understand how the code samples work.
+</p>
+
+<p>
+  If you have no familiarity with unit testing, read <a href="{{ site.baseurl }}{{% post_url 2014-01-23-unit-testing %}}"><i class="fa fa-arrow-circle-right"></i> The basics of unit testing</a>.
+</p>
+
+<h2>Tutorials</h2>
+
+{% for post in site.categories.tutorial %}
+<p>
+  <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-arrow-circle-right"></i> {{ post.title }}</a></li>
+  <br>
+  <small>
+    <strong>Topics:</strong> {{ post.categories | array_to_sentence_string }}</li>
+  </small>
+</p>
+{% endfor %}
