@@ -1,3 +1,4 @@
 name: Intro to Testing
 markdown: redcarpet
 pygments: true
+baseurl: /testing
