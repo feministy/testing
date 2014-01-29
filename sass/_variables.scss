@@ -1,6 +1,7 @@
 $body: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
 $accent: "brandon-grotesque", Helvetica, Arial, sans-serif;
 
+$cream: #fffdf9;
 $light-teal: #93a1a1;
 $dark-teal: #268bd2;
 $green: #859900;
@@ -9,10 +10,11 @@ $text: #45565b;
 
 // SASS ONLY HELPERS
 %accent { font-family: $accent; }
+%backgroundDarkTeal { background: $dark-teal; }
+%backgroundRed { background: $light-teal; }
+%backgroundGreen { background: $green; }
 %body { font-family: $body; }
-%padding5x0 { padding: 5px 0px; }
-%padding10x0 { padding: 10px 0px; }
-%padding25x0 { padding: 25px 0px; }
+%paddingMargin0 { padding: 0px; margin: 0px; }
 %textColor { color: $text; }
 %textDarkPink { color: $dark-pink; }
 %textGreen { color: $green; }
@@ -21,3 +23,8 @@ $text: #45565b;
 %weight400 { font-weight: 400; }
 %weight700 { font-weight: 700; }
 %weight900 { font-weight: 900; }
+
+// MIXINS
+@mixin singlePadding($num) { padding: $num; }
+@mixin multiPadding($top, $sides) { padding: $top $sides; }
+@mixin textAlign($align) { text-align: $align; }

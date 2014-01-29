@@ -5,46 +5,62 @@ html, body,
 .pure-g-r [class *= "pure-u"] {
   @extend %body;
   @extend %textColor;
-  background: #fffdf9;
+  background: $cream;
 }
 
-p, ul, li {
-  font-size: 1.1em;
+p, ul, ol, li {
+  font-size: 1em;
   line-height: 1.5em;
   text-align: justify;
 }
 
 a {
   @extend %textGreen;
+  text-decoration: none;
 }
 
 pre {
-  padding: 10px;
+  @include singlePadding(10px);
 }
 
 h1, h2, h3, h4, h5, h6 {
   @extend %accent;
   @extend %weight900;
   @extend %uppercase;
-  @extend %padding10x0;
 }
 
-h1 {
-  border-bottom: 4px solid $dark-teal;
-  @extend %textGreen;
+
+.header {
+  @include textAlign(center);
+  font-size: 1.25em;
+  border-bottom: 8px solid $dark-teal;
+}
+
+.nav {
+  padding: 10px 0px 0px 0px;
+  font-size: 0.8em;
+}
+
+.content {
+  padding-bottom: 20px;
 }
 
 .post {
-  h2 {
-    border-bottom: 2px solid $dark-teal;
+  h1 {
     @extend %textGreen;
+    @include singlePadding(10px);
   }
+
+  h2 {
+    @extend %textGreen;
+    @include multiPadding(10px, 0px);
+  }
+
   h6 {
     @extend %textDarkPink;
+    @extend %paddingMargin0;
+    @include textAlign(right);
     font-family: monospace, $body;
-    padding: 0px;
-    margin: 0px;
-    text-align: right;
     font-size: 0.75em;
   }
 }

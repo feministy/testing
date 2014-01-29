@@ -1,43 +1,44 @@
-/* line 11, ../sass/_variables.scss */
+/* line 12, ../sass/_variables.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
-}
-
-/* line 12, ../sass/_variables.scss */
-html, body,
-.pure-g [class*="pure-u"],
-.pure-g-r [class*="pure-u"] {
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-}
-
-/* line 14, ../sass/_variables.scss */
-h1, h2, h3, h4, h5, h6 {
-  padding: 10px 0px;
 }
 
 /* line 16, ../sass/_variables.scss */
 html, body,
 .pure-g [class*="pure-u"],
 .pure-g-r [class*="pure-u"] {
-  color: #45565b;
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
 }
 
 /* line 17, ../sass/_variables.scss */
 .post h6 {
-  color: #dc322f;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* line 18, ../sass/_variables.scss */
-a, h1, .post h2 {
-  color: #859900;
+html, body,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  color: #45565b;
 }
 
 /* line 19, ../sass/_variables.scss */
+.post h6 {
+  color: #dc322f;
+}
+
+/* line 20, ../sass/_variables.scss */
+a, .post h1, .post h2 {
+  color: #859900;
+}
+
+/* line 21, ../sass/_variables.scss */
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 23, ../sass/_variables.scss */
+/* line 25, ../sass/_variables.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
@@ -50,31 +51,51 @@ html, body,
 }
 
 /* line 11, ../sass/main.scss */
-p, ul, li {
-  font-size: 1.1em;
+p, ul, ol, li {
+  font-size: 1em;
   line-height: 1.5em;
   text-align: justify;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 22, ../sass/main.scss */
 pre {
   padding: 10px;
 }
 
-/* line 32, ../sass/main.scss */
-h1 {
-  border-bottom: 4px solid #268bd2;
+/* line 33, ../sass/main.scss */
+.header {
+  text-align: center;
+  font-size: 1.25em;
+  border-bottom: 8px solid #268bd2;
 }
 
-/* line 38, ../sass/main.scss */
-.post h2 {
-  border-bottom: 2px solid #268bd2;
+/* line 39, ../sass/main.scss */
+.nav {
+  padding: 10px 0px 0px 0px;
+  font-size: 0.8em;
 }
-/* line 42, ../sass/main.scss */
+
+/* line 44, ../sass/main.scss */
+.content {
+  padding-bottom: 20px;
+}
+
+/* line 49, ../sass/main.scss */
+.post h1 {
+  padding: 10px;
+}
+/* line 54, ../sass/main.scss */
+.post h2 {
+  padding: 10px 0px;
+}
+/* line 59, ../sass/main.scss */
 .post h6 {
-  font-family: monospace, "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  padding: 0px;
-  margin: 0px;
   text-align: right;
+  font-family: monospace, "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 0.75em;
 }
