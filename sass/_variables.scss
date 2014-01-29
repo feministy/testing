@@ -1,0 +1,21 @@
+$body: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+$accent: "brandon-grotesque", Helvetica, Arial, sans-serif;
+
+$light-teal: #93a1a1;
+$dark-teal: #268bd2;
+$green: #859900;
+$dark-pink: #dc322f;
+$text: #45565b;
+
+// SASS ONLY HELPERS
+%accent { font-family: $accent; }
+%body { font-family: $body; }
+%padding5x0 { padding: 5px 0px; }
+%padding10x0 { padding: 10px 0px; }
+%padding25x0 { padding: 25px 0px; }
+%textColor { color: $text; }
+%uppercase { text-transform: uppercase; }
+%weight300 { font-weight: 300; }
+%weight400 { font-weight: 400; }
+%weight700 { font-weight: 700; }
+%weight900 { font-weight: 900; }

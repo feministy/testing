@@ -1,0 +1,73 @@
+/* line 11, ../sass/_variables.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+}
+
+/* line 12, ../sass/_variables.scss */
+html, body,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+
+/* line 14, ../sass/_variables.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px 0px;
+}
+
+/* line 16, ../sass/_variables.scss */
+html, body,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  color: #45565b;
+}
+
+/* line 17, ../sass/_variables.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* line 21, ../sass/_variables.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+/* line 5, ../sass/main.scss */
+html, body,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  background: #fffdf9;
+}
+
+/* line 11, ../sass/main.scss */
+p, ul, li {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* line 17, ../sass/main.scss */
+pre {
+  padding: 10px;
+}
+
+/* line 28, ../sass/main.scss */
+h1 {
+  border-bottom: 4px solid #268bd2;
+  color: #859900;
+}
+
+/* line 34, ../sass/main.scss */
+.post h2 {
+  border-bottom: 2px solid #268bd2;
+  color: #859900;
+}
+/* line 38, ../sass/main.scss */
+.post h6 {
+  font-family: monospace, "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  color: #dc322f;
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  font-size: 0.75em;
+}

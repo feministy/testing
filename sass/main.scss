@@ -1,0 +1,46 @@
+@import "variables";
+
+html, body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  @extend %body;
+  @extend %textColor;
+  background: #fffdf9;
+}
+
+p, ul, li {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+pre {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %accent;
+  @extend %weight900;
+  @extend %uppercase;
+  @extend %padding10x0;
+}
+
+h1 {
+  border-bottom: 4px solid $dark-teal;
+  color: $green;
+}
+
+.post {
+  h2 {
+    border-bottom: 2px solid $dark-teal;
+    color: $green;
+  }
+  h6 {
+    font-family: monospace, $body;
+    color: $dark-pink;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    font-size: 0.75em;
+  }
+}
