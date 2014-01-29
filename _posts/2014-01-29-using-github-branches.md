@@ -5,7 +5,7 @@ date:   2014-01-29 20:17:39
 categories: basics
 ---
 
-Every tutorial has a corresponding Github repo that contains branches for different sections to make it easier to folow along. At the beginning of every post, there will be a link to the repository.
+Every tutorial has a corresponding Github repo that contains branches for different sections to make it easier to follow along. At the beginning of every post, there will be a link to the repository.
 
 You can either:
 

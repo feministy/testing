@@ -2,10 +2,8 @@
 layout: post
 title:  "Unit testing: Ruby with RSpec"
 date:   2014-01-24 20:17:39
-categories: ruby unit calculator
+categories: ruby calculator unit tutorial
 ---
-
-I often find that the best way to learn a new way of testing things is to use something simple that mimics a real-world object. I really like using a calculator as an example because it can be as complex or as simple as you want it to be.
 
 This tutorial assumes that you:
 
