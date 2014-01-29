@@ -12,11 +12,16 @@ This tutorial assumes that you:
 * know how to read, write, and run Ruby
 * have familiarity with Ruby Gems
 * know what unit testing is
-* have downloaded the calculator (how to navigate)
+* have downloaded the calculator (see below)
 
 If any of that is beyond the scope of your abilities, you can likely still follow along.
 
 ## Download calculator
+
+A basic tutorial on how to use the repos to navigate alongside the code is available here.
+
+* [View repo](https://github.com/feministy/rspec_calculator)
+* `git clone https://github.com/feministy/rspec_calculator.git`
 
 ## Our test object: a calculator
 
@@ -120,7 +125,7 @@ You can see that `calc.nums` does not change. The contents are protected.
 
 ## Running existing tests
 
-###### ruby-calculator-rspec-01
+###### branch: part-01
 
 Before you start modifying the code or writing your own tests, you should become familiar with the existing tests.
 
@@ -168,7 +173,9 @@ Some things to keep in mind:
 
 ## Anatomy of a test
 
-Here is a simple test for addition (not in `calculator_spec.rb`):
+###### branch: part-02
+
+Here is a simple test for addition:
 
 {% highlight ruby linenos %}
 it 'returns the sum of all numbers' do
