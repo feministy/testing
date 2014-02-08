@@ -1,3 +1,5 @@
 # Intro to Testing
 
-This repo is an intro level tutorial about testing code. For the specific repos or code, see the relevant posts.
+This respository contains the content and tutorials for the [Intro to Testing](http://feministy.github.io/testing) project. To follow along with each tutorial, check out the individual repos (linked in the tutorial and below).
+
+* [Ruby with Rspec: Calculator](https://github.com/feministy/rspec_calculator)
