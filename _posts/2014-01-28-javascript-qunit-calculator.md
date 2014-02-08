@@ -162,4 +162,4 @@ So now we need to write some tests!
 
 ###### branch: coffeescript
 
-Just so you can see a comparison, I've included the calculator written in CoffeeScript along with a few simple tests. While the syntaf of JavaScript can be a little frustrating, it is very helpful to understand how to read and write using the proper syntax before switching to CoffeeScript.
+Just so you can see a comparison, I've included the calculator written in CoffeeScript along with a few simple tests. While the syntax of JavaScript can be a little frustrating, it is very helpful to understand how to read and write using the proper syntax before switching to CoffeeScript.
