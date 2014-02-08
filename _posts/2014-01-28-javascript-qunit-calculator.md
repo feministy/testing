@@ -157,3 +157,9 @@ Lines 11, 12, and 13 require the files we need: our calculator, QUnit, and the c
 If you open `runner.html` in your browser, it should say '0 assertions of 0 passed, 0 failed.'
 
 So now we need to write some tests!
+
+# A note on Coffeescript
+
+###### branch: coffeescript
+
+Just so you can see a comparison, I've included the calculator written in CoffeeScript along with a few simple tests. While the syntaf of JavaScript can be a little frustrating, it is very helpful to understand how to read and write using the proper syntax before switching to CoffeeScript.
