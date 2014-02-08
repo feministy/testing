@@ -9,9 +9,12 @@ html, body,
 }
 
 p, ul, ol, li {
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  code {
+    background: #fdf6e3;
+    padding: 3px;
+  }
 }
 
 a {

@@ -52,48 +52,52 @@ html, body,
 
 /* line 11, ../sass/main.scss */
 p, ul, ol, li {
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+/* line 14, ../sass/main.scss */
+p code, ul code, ol code, li code {
+  background: #fdf6e3;
+  padding: 3px;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 a {
   text-decoration: none;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 pre {
   padding: 10px;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .header {
   text-align: center;
   font-size: 1.25em;
   border-bottom: 8px solid #268bd2;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .nav {
   padding: 10px 0px 0px 0px;
   font-size: 0.8em;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .content {
   padding-bottom: 20px;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .post h1 {
   padding: 10px;
 }
-/* line 54, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .post h2 {
   padding: 10px 0px;
 }
-/* line 59, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .post h6 {
   text-align: right;
   font-family: monospace, "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
