@@ -155,70 +155,87 @@ Randomized with seed 21811
 
 The test run order is randomized to help you spot any potential problems with your code or your test suite.
 
-## Writing more calculator tests
-
-The `calculator_spec.rb` file has a few contexts with no tests in them. You should write some! Here are some helpful resources:
-
-* [Better Specs](http://betterspecs.org/) - comparison of good specs and bad specs
-* [RSpec Expectations](http://rubydoc.info/gems/rspec-expectations/frames) - guides for using RSpec
-
-Some things to keep in mind:
-
-* Each test block (starts with `it 'should do this thing' do`) should contain only one assertion. Assertions are the lines that include `expect` (`expect(@calc.nums).to be_nil`).
-* Anything in a `before` block is run before each test.
-* Variables with an `@` symbol in front of them are instance variables and can be used throughout your file.
-* This test file is intentionally not perfect. What tests are missing for `#push` and `#initialize`? Is there functionality missing from the Calculator itself? Can the tests be refactored?
-
 ## Anatomy of a test
 
 ###### branch: part-02
 
-Here is a simple test for addition:
+Starting with an empty file, here is a simple test for addition:
 
 {% highlight ruby linenos %}
-it 'returns the sum of all numbers' do
-  calc = Calculator.new
-  calc.push(2)
-  calc.push(5)
-  calc.push(3)
-  total = calc.add
-  expect(total).to be(10)
+require 'rspec'
+require_relative 'calculator.rb'
+
+describe 'Calculator' do
+  context '#add' do
+    it 'returns the sum of all numbers' do
+      calc = Calculator.new
+      calc.push(2)
+      calc.push(5)
+      calc.push(3)
+      total = calc.add
+      expect(total).to be(10)
+    end
+  end
 end
 {% endhighlight %}
 
 Now lets break this down.
 
+We are requiring the `rspec` gem, and our `calculator.rb` file:
+
+{% highlight ruby %}
+require 'rspec'
+require_relative 'calculator.rb'
+{% endhighlight %}
+
+Then we need to tell ourselves what it is we're testing. We use `describe` in a larger sense here to indicate that it is the object we're testing. This is usually a class or a module. `describe` opens a block for us.
+
+We use `context` to open another block that indicates what method we're testing. In this case, `#add`. The convention of using a `#` before the method name is something helpful you can do to indicate that your test is a unit test that covers only that method.
+
+{% highlight ruby %}
+describe 'Calculator' do
+  context '#add' do
+{% endhighlight %}
+
 This is the description of what our test is actually testing for.
 
 {% highlight ruby %}
-it 'returns the sum of all numbers' do
+    it 'returns the sum of all numbers' do
 {% endhighlight %}
 
 We have to make a new Calculator object:
 
 {% highlight ruby %}
-  calc = Calculator.new
+      calc = Calculator.new
 {% endhighlight %}
 
 And put some numbers into our Calculator:
 
 {% highlight ruby %}
-  calc.push(2)
-  calc.push(5)
-  calc.push(3)
+      calc.push(2)
+      calc.push(5)
+      calc.push(3)
 {% endhighlight %}
 
 Now that our calculator has numbers, we can add them together to get a total using the add method.
 
 {% highlight ruby %}
-  total = calc.add
+      total = calc.add
 {% endhighlight %}
 
 This is our assertion. Read in plain English: `we expect the total to be 10`. Our test will pass if the total is 10. Our test will fail is the total is not 10 (the Integer).
 
 {% highlight ruby %}
-  expect(total).to be(10)
+      expect(total).to be(10)
+    end
+  end
 end
 {% endhighlight %}
 
 
+
+
+# Additional RSpec resources
+
+* [Better Specs](http://betterspecs.org/) - comparison of good specs and bad specs
+* [RSpec Expectations](http://rubydoc.info/gems/rspec-expectations/frames) - guides for using RSpec
